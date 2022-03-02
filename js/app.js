@@ -431,7 +431,7 @@ function calcularPropina() {
 function mostrarTotalHTML(subTotal ,total ,propina) {
 
     const divTotales = document.createElement('DIV');
-    divTotales.classList.add('total-pagar');
+    divTotales.classList.add('total-pagar','my-5');
 
     //Subtotal
     const subtotalParrafo = document.createElement('P');
