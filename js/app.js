@@ -143,8 +143,12 @@ function agregarPlatillo(producto) {
     //Limpiar HTML previo
     limpiarHTML();
 
-    //Mostrar el Resumen
-    actualizarResumen();
+    if( cliente.pedido.length ) {
+        //Mostrar el Resumen
+        actualizarResumen();
+    } else {
+        mensajePedidoVacio();
+    }
 }
 
 
@@ -285,6 +289,27 @@ function eliminarProducto(id){
     //Limpiar HTML previo
     limpiarHTML();
 
-    //Mostrar el Resumen
-    actualizarResumen();
+    if( cliente.pedido.length ) {
+        //Mostrar el Resumen
+        actualizarResumen();
+    } else {
+        mensajePedidoVacio();
+    }
+
+    // El producto se elimino regresar input a 0;
+    const productoEliminado = `#producto-${id}`;
+    const inputEliminado = document.querySelector(productoEliminado);
+    inputEliminado.value = 0;
+
+    console.log(productoEliminado);
+}
+
+function mensajePedidoVacio () {
+   const contenido = document.querySelector('#resumen .contenido');
+
+   const texto = document.createElement('P');
+   texto.classList.add('text-center');
+   texto.textContent = 'Añade los elementos del pedido';
+
+   contenido.appendChild(texto);
 }
