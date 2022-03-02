@@ -332,8 +332,68 @@ function formularioPropinas() {
     heading.textContent = 'Propina';
 
 
-    formulario.appendChild(divFormulario);
+    // Radio Button 10%
+    const radio10 = document.createElement('INPUT');
+    radio10.type = 'radio';
+    radio10.name = 'propina';
+    radio10.value = '10';
+    radio10.classList.add('form-check-input');
+
+    const radio10Label = document.createElement('LABEL');
+    radio10Label.textContent = '10%';
+    radio10.classList.add('form-check-label')
+
+    const radio10Div = document.createElement('DIV');
+    radio10Div.classList.add('form-check');
+
+    radio10Div.appendChild(radio10);
+    radio10Div.appendChild(radio10Label);
+
+
+    // Radio Button 25%
+    const radio25 = document.createElement('INPUT');
+    radio25.type = 'radio';
+    radio25.name = 'propina';
+    radio25.value = '25';
+    radio25.classList.add('form-check-input');
+
+    const radio25Label = document.createElement('LABEL');
+    radio25Label.textContent = '25%';
+    radio25.classList.add('form-check-label')
+
+    const radio25Div = document.createElement('DIV');
+    radio25Div.classList.add('form-check');
+
+    radio25Div.appendChild(radio25);
+    radio25Div.appendChild(radio25Label);
+    
+
+    // Radio Button 50%
+    const radio50 = document.createElement('INPUT');
+    radio50.type = 'radio';
+    radio50.name = 'propina';
+    radio50.value = '50';
+    radio50.classList.add('form-check-input');
+
+    const radio50Label = document.createElement('LABEL');
+    radio50Label.textContent = '50%';
+    radio50.classList.add('form-check-label')
+
+    const radio50Div = document.createElement('DIV');
+    radio50Div.classList.add('form-check');
+
+    radio50Div.appendChild(radio50);
+    radio50Div.appendChild(radio50Label);
+    
+
+    //Agregar al Div PPAL
     divFormulario.appendChild(heading);
+    divFormulario.appendChild(radio10Div);
+    divFormulario.appendChild(radio25Div);
+    divFormulario.appendChild(radio50Div);
+
+    //Agregar al Formulario
+    formulario.appendChild(divFormulario);
 
     contenido.appendChild(formulario);
 }
