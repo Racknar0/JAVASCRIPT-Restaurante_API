@@ -60,7 +60,8 @@ function mostrarSecciones() {
 }
 
 function obtenerPlatillos() {
-    const url = 'http://localhost:4000/platillos';
+    /* const url = 'http://localhost:4000/platillos'; */
+    const url = 'https://api.npoint.io/200fc36133534acbb1b2';
 
     fetch(url)
         .then((respuesta) => respuesta.json())
@@ -69,9 +70,12 @@ function obtenerPlatillos() {
 }
 
 function mostrarPlatillos(platillos) {
+    
     const contenido = document.querySelector('#platillos .contenido');
 
-    platillos.forEach((platillo) => {
+    const platisho = platillos.platillos;
+
+    platisho.forEach((platillo) => {
         const row = document.createElement('DIV');
         row.classList.add('row', 'py-3', 'border-top');
 
