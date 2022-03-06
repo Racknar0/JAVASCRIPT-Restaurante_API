@@ -16,6 +16,6 @@ Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practi
       height="100" /> </a>
 
 -  Visualización :-
-<a href="https://api-cotizarcrypto.netlify.app/" target="_blank"
-    rel="noreferrer">https://api-cotizarcrypto.netlify.app/</a>
+<a href="https://rest-api-restaurante.netlify.app/" target="_blank"
+    rel="noreferrer">https://rest-api-restaurante.netlify.app/</a>
 
