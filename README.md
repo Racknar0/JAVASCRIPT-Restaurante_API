@@ -1,8 +1,8 @@
 Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practica Prototypes de JS
 
 
-<h1 align="center">API Cotizar Cryptos</h1>
-<h3 align="center">Consulta tus cryptos🌟.</h3>
+<h1 align="center">REST API Restaurante</h1>
+<h3 align="center">Proyecto usando como endpoint https://api.npoint.io/200fc36133534acbb1b2 🌟.</h3>
 
 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
